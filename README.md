@@ -1,1 +1,1 @@
-https://nourdotsiwar.github.io/projects.html
+https://nourdotsiwar.github.io/index.html
