@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Nour Siwar
+EMAIL: nour.siwar@outlook.com
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Nour Siwar">
+  <meta name="description" content="Android Developer Portfolio">
+   <!-- you would link to an external stylesheet here! -->
+    <link rel="stylesheet" href="android_journey.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- you would also link to Bootstrap here! -->
+
+   <!-- favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+  <title>Nour Siwar</title>
+</head>
+<body>
+  <!-- Navigation Bar -->
+   <nav class="navbar">
+    <div class ="navdiv">
+      <div class ="logo"><a href="index.html">Nour Siwar</a></div>
+        
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    
+      <div class="nav-menu">
+          <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="android_journey.html">Android Journey</a></li>
+          <li><button id="contact-btn">Contact Me!</button></li>
+        </ul>
+      </div> 
+
+      <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get in touch!</h2>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                
+              <input type="hidden" name="access_key" value="236343f3-3106-446a-bee8-5af0d1da06e8">
+              
+              <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="submit-btn-div">
+                <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    </nav>
+
+  <!-- Android Journey Section -->
+    <section id="android-journey">
+      <div class="android-journey">
+     
+        <div class="timeline">
+          <div class="timeline_container left-container">
+            <div class="text-box">
+              <i class="fas fa-code"></i>
+              <h2>CodePath</h2>
+              <small>Sep 2022 - Nov 2022</small>
+              <p>First Android Course at CodePath where every week I made small projects to learn about Android Fundamentals, ending up with an ongoing final project which utilized: Kotlin, XML, Google Places API, and Firebase</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="timeline_container right-container">
+            <div class="text-box">
+              <i class="fa-sharp-duotone fa-solid fa-hand-holding-medical"></i>
+              <h2>UC Irvine Health</h2>
+              <small>Jul 2023 - Present</small>
+              <p>First research experience in addition to hands on Android Development to make an Android application involving Google Machine Learning Kit for Glaucoma patients. Transitioned the application's UI from XML to Jetpack Compose</p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="timeline_container left-container">
+            <div class="text-box">
+              <i class="fa-sharp-duotone fa-solid fa-music"></i>
+              <h2>SiriusXM</h2>
+              <small>Jan 2024 - April 2024</small>
+              <p>First Android Backend Internship where I collaborated with my mentor on designing a feature in the SiriusXM application with Google's Engage SDK, this is where I learned about Workmanager, Broadcast Receiver, and in general more about the Kotlin language as well as integrating SDKs</p>
+              <span class="left-container-arrow"></span>
+            </div>
+          </div>
+
+          <div class="timeline_container right-container">
+            <div class="text-box">
+              <i class="fa-sharp-duotone fa-solid fa-map"></i>
+              <h2>ESRI</h2>
+              <small>June 2024 - Sep 2024</small>
+              <p>First Android Frontend Internship where I learned Jetpack Compose and converted a lot of applications from Kotlin to Java and XML to Compose, this was my first in-person internship where I had my first in-person hackathon </p>
+              <span class="right-container-arrow"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="code.js"></script>
+</body>
+</html>

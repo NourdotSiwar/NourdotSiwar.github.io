@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Nour Siwar
+EMAIL: nour.siwar@outlook.com
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Nour Siwar">
+  <meta name="description" content="Android Developer Portfolio">
+   <!-- you would link to an external stylesheet here! -->
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <!-- you would also link to Bootstrap here! -->
+
+   <!-- favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+  <title>Nour Siwar</title>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+   <nav class="navbar">
+    <div class ="navdiv">
+      <div class ="logo"><a href="index.html">Nour Siwar</a></div>
+        
+      <button class="nav-toggle" onclick="toggleNav()">☰</button>
+    
+      <div class="nav-menu">
+          <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="android_journey.html">Android Journey</a></li>
+          <li><button id="contact-btn">Contact Me!</button></li>
+        </ul>
+      </div> 
+
+      <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get in touch!</h2>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                
+              <input type="hidden" name="access_key" value="236343f3-3106-446a-bee8-5af0d1da06e8">
+              
+              <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <div class="submit-btn-div">
+                <button type="submit" id="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+      </div>
+   </nav>
+
+      <!-- Projects Section -->
+      <section id="projects">
+            <div class="projects_body">
+                    <div class="projects_container left-container">
+                      <div class="content-box">
+                        <i class="fa-solid fa-compact-disc"></i>
+                        <h2>Chordinate</h2>
+                        <p>Chordinate is a music app that allows users to find what other people around them are listening to. The app is built using the Spotify API, Jetpack Compose, and Kotlin.</p>
+                        <img src="chordinate.png" alt="Picture of Chordinate Icon">
+                        <a class="project-btn" href="https://github.com/NourdotSiwar/Chordinate" target="_blank">Learn More</a>
+                        <span class="left-container-arrow"></span>
+                      </div>
+                    </div>
+
+                    <div class="projects_container right-container">
+                      <div class="content-box">
+                        <i class="fa-solid fa-house-medical"></i>
+                        <h2>Find closest facility from point</h2>
+                        <p>Quickly and accurately determining the most efficient route between a location and a facility. This sample is built using the ArcGIS Maps SDK for Kotlin and Jetpack Compose.</p>
+                        <img src="find-closest-facility-from-point.png" alt="Find Closest Facility from Point Image">
+                        <a class="project-btn" href="https://github.com/Esri/arcgis-maps-sdk-kotlin-samples/tree/main/find-closest-facility-from-point" target="_blank">Learn More</a>
+                        <span class="right-container-arrow"></span>
+                      </div>
+                    </div>
+
+                    <div class="projects_container left-container">
+                      <div class="content-box">
+                        <i class="fa-sharp fa-solid fa-building"></i>
+                        <h2>Show Line of Sight Between Geoelements</h2>
+                        <p>Find target's visibility from observer viewpoint through the building between target and observer. This sample is built using the ArcGIS Maps SDK for Kotlin and Jetpack Compose.</p>
+                        <img src="show-line-of-sight-between-geoelements.png" alt="Show Line of Sight between Geoelements Image">
+                        <a class="project-btn" href="https://github.com/Esri/arcgis-maps-sdk-kotlin-samples/tree/main/show-line-of-sight-between-geoelements" target="_blank">Learn More</a>
+                        <span class="left-container-arrow"></span>
+                      </div>
+                    </div>
+
+                    <div class="projects_container right-container">
+                      <div class="content-box">
+                        <i class="fa-sharp fa-solid fa-map"></i>
+                        <h2>Generate Offline Map</h2>
+                        <p>Take a web map offline! Useful for field workers. This sample is built using the ArcGIS Maps SDK for Kotlin and Jetpack Compose.</p>
+                        <img src="generate-offline-map.png" alt="Generate Offline Map Image">
+                        <a class="project-btn" href="https://github.com/Esri/arcgis-maps-sdk-kotlin-samples/tree/main/generate-offline-map" target="_blank">Learn More</a>
+                        <span class="right-container-arrow"></span>
+                      </div>
+                    </div>
+
+                    <div class="projects_container left-container">
+                      <div class="content-box">
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Edit and Sync Features with Feature Service</h2>
+                        <p>Field workers can take a Geodatabase survey features offline at their offices then edit or add new features to the database in the field. This sample is built using the ArcGIS Maps SDK for Kotlin and Jetpack Compose.</p>
+                        <img src="edit-and-sync-features-with-feature-service.png" alt="Edit and Sync Features with Feature Service Image">
+                        <a class="project-btn" href="https://github.com/Esri/arcgis-maps-sdk-kotlin-samples/tree/main/edit-and-sync-features-with-feature-service" target="_blank">Learn More</a>
+                        <span class="left-container-arrow"></span>
+                      </div>
+                    </div>
+            </div>
+      </section>
+    
+      <script src="code.js"></script>
+</body>
+</html>
